@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+out/
+
+# Node.js baggage
+node_modules/
 
 # C extensions
 *.so
