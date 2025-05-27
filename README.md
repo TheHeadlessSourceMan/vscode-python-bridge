@@ -19,6 +19,9 @@ The primary purpose is to be able to do things from jupyter scripts such as:
 1. The vscode plugin starts and creates a new websocket server on a random ephemeral port number (on localhost).
 2. The plugin then saves information about the vscode instance and port to ~/.vscode_instances.json in the user's home directory.
 3. The python side reads this .vscode_instances.json file and and connects to the websocket.
+
+	* NOTE: if you don't want to write a client from scratch, there is a pythonic implementation in the [pyVsCode](https://github.com/TheHeadlessSourceMan/pyVsCode) package
+
 4. According to whatever your python program wants to do, it repeatedly:
     
     a. Generates javascript code and sends it to the websocket.
